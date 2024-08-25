@@ -20,25 +20,25 @@ export default function Home() {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-          if (dark) {
-            document.body.classList.add("darkMode");
-          } else {
-            document.body.classList.remove("darkMode");
-          }
-        }
-      }, [dark]);
+            if (dark) {
+                document.body.classList.add("darkMode");
+            } else {
+                document.body.classList.remove("darkMode");
+            }
+            }
+        }, [dark]);
     
 
     return (
     <div className={`${dark ? "darkMode" : ""}`}>
         <div className="d-flex flex-column flex-lg-row gap-4 mx-1">
-            <SideMenu dark={dark}/>
+            <SideMenu dark={dark} changeMode={changeMode}/>
             <div className="col p-3">
                 <div className="container">
                     <div className="d-flex justify-content-between flex-row">
                     {/* Masaüstü için breadcrumb, mobilde gizlenir */}
                         <p className="my-text-xs mb-4 d-none d-md-block"> Home <Image src="/buyuktur_iconu.svg" width={12} height={12} alt="" /> Settings <Image src="/buyuktur_iconu.svg" width={12} height={12} alt="" /> <span className="text-primary">General</span> </p>
-                        <div className="toggle-switch mx-4">
+                        <div className="toggle-switch mx-4 d-none d-md-block">
                             <label className="switch-label">
                                 <input type="checkbox" className="checkbox" checked={dark} onChange={changeMode} />
                                 <span className="slider"></span>
