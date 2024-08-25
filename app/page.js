@@ -42,7 +42,7 @@ useEffect(() => {
                     <div className="row justify-content-between">
                         <div className="col-12 col-lg-6">
                             <h3 className="my-text-xl m-0">Hey there, Brian Ford!</h3>
-                            <p className="my-text-s">Welcome back, we're happy to have you here!</p>
+                            <p className="my-text-s">Welcome back, we are happy to have you here!</p>
                         </div>
 
                         {/* Tablet modunda butonlar yazının altına düşer */}
