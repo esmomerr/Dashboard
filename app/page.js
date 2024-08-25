@@ -12,13 +12,16 @@ import { DarkContext } from "@/store/context";
 export default function Home() {
     const { dark, changeMode } = useContext(DarkContext);
 
-useEffect(() => {
-    if (dark) {
-        document.body.classList.add("darkMode");
-    } else {
-        document.body.classList.remove("darkMode");
-    }
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (dark) {
+                document.body.classList.add("darkMode");
+            } else {
+                document.body.classList.remove("darkMode");
+            }
+        }
     }, [dark]);
+    
 
     return (
     <div className={`${dark ? "darkMode" : ""}`}>
