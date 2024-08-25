@@ -1,26 +1,32 @@
 "use client";
 import "@/scss/input.scss";
-import AdvancedGraphic from "@/components/advancedGraphic";
-import Cards from "@/components/cards";
-import Section from "@/components/section";
-import SideMenu from "@/components/sideMenu";
+// import AdvancedGraphic from "@/components/advancedGraphic";
+// import Cards from "@/components/cards";
+// import Section from "@/components/section";
+// import SideMenu from "@/components/sideMenu";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect } from "react";
 import { DarkContext } from "@/store/context";
+import dynamic from "next/dynamic";
+
+const AdvancedGraphic = dynamic(() => import('@/components/advancedGraphic'), { ssr: false });
+const Cards = dynamic(() => import('@/components/cards'), { ssr: false });
+const Section = dynamic(() => import('@/components/section'), { ssr: false });
+const SideMenu = dynamic(() => import('@/components/sideMenu'), { ssr: false });
 
 export default function Home() {
     const { dark, changeMode } = useContext(DarkContext);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            if (dark) {
-                document.body.classList.add("darkMode");
-            } else {
-                document.body.classList.remove("darkMode");
-            }
+          if (dark) {
+            document.body.classList.add("darkMode");
+          } else {
+            document.body.classList.remove("darkMode");
+          }
         }
-    }, [dark]);
+      }, [dark]);
     
 
     return (
