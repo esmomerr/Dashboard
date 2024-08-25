@@ -1,0 +1,151 @@
+@import './variables';
+
+body {
+  background-color: $bg-color-white; // Light mode için varsayılan renk
+  overflow-x: hidden;
+}
+
+body.darkMode {
+  background-color: $bg-color-dark !important; // Dark mode için renk
+}
+
+.my-text-xs {
+  color: $color-gray;
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+}
+
+.my-text-s {
+  color: $color-gray;
+  font-size: $font-size-16;
+  font-weight: $font-weight-400;
+}
+
+.my-text-l {
+  color: $color-dark;
+  font-size: $font-size-16;
+  font-weight: $font-weight-500;
+}
+
+.my-text-xl {
+  color: $color-dark;
+  font-size: $font-size-28;
+  font-weight: $font-weight-600;
+}
+
+.my-text-m {
+  color: $color-dark;
+  font-size: $font-size-18;
+  font-weight: $font-weight-600;
+}
+
+.my-open-btn {
+  color: $color-blue;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}
+
+.my-btn-transparent {
+  color: $color-dark;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}
+
+.my-btn {
+  color: $color-white;
+  background-color: $color-blue;
+  font-size: $font-size-14;
+  font-weight: $font-weight-600;
+}
+
+.my-blue-btn {
+  color: $color-blue;
+  background-color: rgba($color-blue, 0.2);
+  font-size: $font-size-13;
+  font-weight: $font-weight-500;
+}
+
+.my-red-btn {
+  color: $color-red;
+  background-color: rgba($color-red, 0.2);
+  font-size: $font-size-13;
+  font-weight: $font-weight-500;
+}
+
+.my-green-btn {
+  color: $color-green;
+  background-color: rgba($color-green, 0.2);
+  font-size: $font-size-13;
+  font-weight: $font-weight-500;
+}
+
+.my-sidebar-btns {
+  color: $color-gray;
+  font-size: $font-size-15;
+  font-weight: $font-weight-600;
+}
+
+.my-card {
+  background-color: $color-white;
+}
+
+.my-text-xs-online{
+  color: $color-blue;
+  background-color: rgba($color-blue, 0.2);
+  font-size: $font-size-14;
+  font-weight: $font-weight-500;
+}
+
+body.darkMode {
+  .my-text-xs {
+    color: $color-gray-dark;
+  }
+  .my-text-s {
+    color: $color-gray-dark;
+  }
+  .my-text-l {
+    color: $color-white-dark;
+  }
+  .my-text-xl {
+    color: $color-white-dark;
+  }
+  .my-text-m {
+    color: $color-white-dark;
+  }
+  .my-open-btn {
+    color: $color-blue-dark;
+  }
+  .my-btn-transparent {
+    color: $color-white-dark;
+    background-color: $bg-color-gray;
+  }
+  .my-btn {
+    color: $color-white-dark;
+    background-color: $color-blue-dark;
+  }
+  .my-blue-btn {
+    color: $color-white-dark;
+    background-color: rgba($color-blue-dark, 1);
+  }
+  .my-red-btn {
+    color: $color-white-dark;
+    background-color: rgba($color-red-dark, 1);
+  }
+  .my-green-btn {
+    color: $color-white-dark;
+    background-color: rgba($color-green-dark, 1);
+  }
+  .my-sidebar-btns {
+    color: $color-gray-dark;
+  }
+  .my-card {
+    background-color: rgba($bg-color-gray, 0.4);
+    border: none;
+  }
+  .my-text-xs-online{
+    color: $color-white-dark;
+    background-color: rgba($color-blue, 1);
+    font-size: $font-size-14;
+    font-weight: $font-weight-500;
+  }
+}
