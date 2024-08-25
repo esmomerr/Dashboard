@@ -15,7 +15,7 @@ export default function AdvancedGraphic(){
 
             <div className="d-flex justify-content-between mt-5 ">
                 <p className="my-text-xs" style={{fontWeight: 600}}>Data graph</p>
-                <Link href="/" className="my-open-btn text-decoration-none" >Open <Image src="/open_icon.svg" width={12} height={12}/></Link>
+                <Link href="/" className="my-open-btn text-decoration-none" >Open <Image src="/open_icon.svg" alt="" width={12} height={12}/></Link>
             </div>
         </div>
     )
